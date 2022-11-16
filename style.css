@@ -176,3 +176,9 @@ h3.no-margin-bottom {
     left: auto;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #hidden {
+    display: none;
+  }
+}
