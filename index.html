@@ -6,24 +6,43 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Sunny Day</title>
   </head>
-  <script language="javascript">
-    function onClickBooking() {
-      var div1 = document.getElementById("floating");
-      div1.addEventListener("click", function (event) {
-        console.log("dd");
-      });
-    }
-  </script>
   <body>
     <div id="fullsize">
-      <div id="half-left">
-        <div>
-          <img
-            style="width: 100%; margin-bottom: 1.5rem"
-            src="./images/Sunny Day.svg"
-          />
-        </div>
+      <div id="floating-video">
+        <img
+          style="width: 100%; margin-bottom: 1.5rem"
+          src="./images/Sunny Day.svg"
+        />
         <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/767798671?h=0bb7b627a3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Sunny Day"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+      <div id="half-left">
+        <img
+          class="hidden"
+          style="width: 100%; margin-bottom: 1.5rem; visibility: hidden"
+          src="./images/Sunny Day.svg"
+        />
+        <img
+          class="show"
+          style="width: 100%; margin-bottom: 1.5rem"
+          src="./images/Sunny Day.svg"
+        />
+        <div class="show" style="padding: 56.25% 0 0 0; position: relative">
           <iframe
             src="https://player.vimeo.com/video/767798671?h=0bb7b627a3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameborder="0"
@@ -42,7 +61,7 @@
         <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
       <div id="half-right">
-        <div id="hidden">
+        <div class="hidden">
           <img
             style="width: 100%; margin-bottom: 1.5rem; visibility: hidden"
             src="./images/Sunny Day.svg"

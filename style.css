@@ -100,6 +100,27 @@ h3.no-margin-bottom {
   }
 }
 
+#floating-video {
+  position: fixed;
+  width: calc(50% - 55px);
+}
+
+@media screen and (max-width: 500px) {
+  #floating-video {
+    display: none;
+  }
+}
+
+.show {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .show {
+    display: block;
+  }
+}
+
 .two-column {
   display: flex;
   justify-content: space-between;
@@ -176,7 +197,7 @@ h3.no-margin-bottom {
 }
 
 @media screen and (max-width: 500px) {
-  #hidden {
+  .hidden {
     display: none;
   }
 }
