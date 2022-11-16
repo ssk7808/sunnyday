@@ -96,6 +96,12 @@ h3.no-margin-bottom {
   }
 }
 
+@media screen and (max-width: 500px) {
+  div.titlebox img {
+    width: 16px;
+  }
+}
+
 .two-column {
   display: flex;
   justify-content: space-between;
