@@ -28,14 +28,18 @@ ul {
 
 .smalltxt {
   font-size: 12px;
-  margin: 0.3rem;
+  margin: 0.3rem 0.3rem 0.3rem 0;
 }
 
 .no-margin-bottom {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
+h3.no-margin-bottom {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 500px) {
   img {
     width: 100%;
   }
@@ -43,8 +47,8 @@ ul {
 
 #fullsize {
   display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
+  justify-content: space-around;
+  gap: 1rem;
   flex-wrap: wrap;
 
   padding: 2rem;
@@ -53,7 +57,7 @@ ul {
   height: 100%; */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #fullsize {
     padding: 1rem;
     flex-direction: column;
@@ -63,7 +67,7 @@ ul {
 #half-left {
   width: 48%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #half-left {
     width: 100%;
   }
@@ -75,7 +79,7 @@ ul {
 
   width: 48%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #half-right {
     width: 100%;
   }
@@ -84,14 +88,16 @@ ul {
 .two-column {
   display: flex;
   justify-content: space-between;
+  gap: 1.5rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .two-column {
     flex-direction: column;
+    gap: 0;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .two-column > div {
     width: 100%;
   }
@@ -110,7 +116,7 @@ ul {
   margin-right: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .column-right :first-child {
     margin-top: 0;
   }
@@ -139,14 +145,16 @@ ul {
   text-align: center;
   cursor: pointer;
   color: #fcfaea;
+  left: 2.5rem;
 }
 
 #floating > h4 {
   margin: 19px 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #floating {
     width: calc(100% - 3rem);
+    left: auto;
   }
 }
