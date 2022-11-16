@@ -34,7 +34,7 @@ ul {
 .smalltxt {
   font-size: 12px;
   margin: 0.3rem 0.3rem 0.3rem 0;
-  line-height: auto;
+  line-height: 18px;
 }
 
 .no-margin-bottom {
@@ -51,8 +51,14 @@ h3.no-margin-bottom {
 }
 
 @media screen and (max-width: 500px) {
-  div.image-back > img {
+  .image-back img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .roundbox p {
+    margin-bottom: 0;
   }
 }
 
@@ -93,12 +99,6 @@ h3.no-margin-bottom {
 @media screen and (max-width: 500px) {
   #half-right {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  div.titlebox img {
-    width: 16px;
   }
 }
 
