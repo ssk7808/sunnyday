@@ -7,7 +7,12 @@ body {
   font-family: "Happiness Sans";
   background-color: #fcfaea;
 
-  line-height: 20px;
+  line-height: 24px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
 }
 
 h3 {
@@ -29,6 +34,7 @@ ul {
 .smalltxt {
   font-size: 12px;
   margin: 0.3rem 0.3rem 0.3rem 0;
+  line-height: auto;
 }
 
 .no-margin-bottom {
@@ -39,8 +45,13 @@ h3.no-margin-bottom {
   line-height: 30px;
 }
 
+.titlebox {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 500px) {
-  img {
+  div.image-back > img {
     width: 100%;
   }
 }
@@ -136,16 +147,17 @@ h3.no-margin-bottom {
 }
 
 #floating {
-  width: calc(50% - 3rem);
+  width: calc(50% - 3.5rem);
   height: 56px;
   background-color: #525252;
   border-radius: 16px;
   position: fixed;
-  bottom: 1rem;
+  bottom: 2rem;
   text-align: center;
   cursor: pointer;
   color: #fcfaea;
   left: 2.5rem;
+  line-height: 20px;
 }
 
 #floating > h4 {
