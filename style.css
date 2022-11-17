@@ -173,18 +173,19 @@ h3.no-margin-bottom {
 
 #floating {
   display: flex;
+  justify-content: space-between;
+  position: fixed;
+
   width: calc(50% - 3.5rem);
   height: 56px;
   background-color: #525252;
   border-radius: 16px;
-  position: fixed;
   bottom: 2rem;
   text-align: center;
   cursor: pointer;
   color: #fcfaea;
   left: 2.5rem;
   line-height: 20px;
-  justify-content: space-between;
 }
 
 #floating > h4 {
