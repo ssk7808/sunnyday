@@ -51,8 +51,20 @@ h3.no-margin-bottom {
 }
 
 @media screen and (max-width: 500px) {
-  .image-back img {
+  .no-small-on-mobile {
     width: 100%;
+  }
+}
+
+.small-on-mobile {
+  width: auto;
+  height: 280px;
+}
+
+@media screen and (max-width: 500px) {
+  .small-on-mobile {
+    width: auto;
+    height: 230px;
   }
 }
 
